@@ -4,10 +4,10 @@
 void Display(int Arr[], int iLength)
 {
     int i;
-    printf("Elements divisible by 5: ");
+    printf("Elements even and divisible by 5: ");
     for(i = 0; i < iLength; i++)
     {
-        if((Arr[i] % 5) == 0)
+        if((Arr[i] % 2 == 0) && (Arr[i] % 5 == 0))
             printf("%d ", Arr[i]);
     }
     printf("\n");
